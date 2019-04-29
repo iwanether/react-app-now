@@ -13,6 +13,7 @@ function App() {
         <Navigation />
         <Switch>
           <Route path="/" component={Home} exact />
+          <Route path="/page/:id" component={Page} />
           <Route path="/page" component={Page} />
           <Route component={Error} />
         </Switch>
