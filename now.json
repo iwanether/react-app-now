@@ -16,7 +16,11 @@
     },
     { "src": "/favicon.ico", "dest": "/favicon.ico" },
     {
-      "src": "/page/(?<id>[^/]+)$",
+      "src": "/page([/]*)",
+      "dest": "index.html"
+    },
+    {
+      "src": "/page/(.*)",
       "dest": "index.html"
     },    
     { "src": "/asset-manifest.json", "dest": "/asset-manifest.json" },
